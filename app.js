@@ -47,6 +47,7 @@ huntMushroomsButton.addEventListener('click', () => {
             type: mushroomType.type,
         };
         // > add the new mushroom to the mushrooms state
+        mushrooms.push(mushroom);
     }
 
     message = foundMessage[found];
@@ -62,6 +63,8 @@ addFriendForm.addEventListener('submit', (e) => {
     // > create a new friend, with a "name" property that
     // is populated from `formData.get('name')` and a
     // "satisfied" property with an initial value of 0
+
+
 
     // > add the new friend to the friends array
 
@@ -95,6 +98,7 @@ function displayMushrooms() {
     // > loop the mushrooms
     // create a mushroom element using the renderMushroom function
     // append it to the container
+    
 }
 
 function displayFriends() {
