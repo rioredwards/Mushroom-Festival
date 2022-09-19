@@ -64,8 +64,6 @@ addFriendForm.addEventListener('submit', (e) => {
     // is populated from `formData.get('name')` and a
     // "satisfied" property with an initial value of 0
 
-
-
     // > add the new friend to the friends array
 
     // > set the message state to let the user know
@@ -98,7 +96,10 @@ function displayMushrooms() {
     // > loop the mushrooms
     // create a mushroom element using the renderMushroom function
     // append it to the container
-    
+    for (let mushroom of mushrooms) {
+        const mushroomEl = renderMushroom(mushroom);
+        mushroomContainer.append(mushroomEl);
+    }
 }
 
 function displayFriends() {
